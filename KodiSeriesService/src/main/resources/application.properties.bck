@@ -1,0 +1,7 @@
+spring.datasource.url=jdbc:mysql://192.168.0.174:3306/MyVideos75
+spring.datasource.username=xbmc
+spring.datasource.password=xbmc
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+spring.jpa.show-sql=true
+spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
+spring.jpa.hibernate.ddl-auto=none

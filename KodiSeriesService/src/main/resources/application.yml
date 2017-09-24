@@ -1,0 +1,18 @@
+spring:
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: none
+      naming:
+#        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl 
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  datasource:
+    url: jdbc:mysql://192.168.0.174:3306/MyVideos75
+    username: xbmc
+    password: xbmc
+    driver-class-name: com.mysql.jdbc.Driver
+server:
+  port: 8080
+  servlet-path: /
+    

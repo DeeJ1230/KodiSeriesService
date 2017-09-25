@@ -8,7 +8,7 @@ public class Files {
 
 	@Id
 	private int idFile;
-	private int idPath;
+	private Integer idPath;
 	private String strFilename;
 	private Integer playCount;
 	private String lastPlayed;
@@ -20,10 +20,10 @@ public class Files {
 	public void setIdFile(int idFile) {
 		this.idFile = idFile;
 	}
-	public int getIdPath() {
+	public Integer getIdPath() {
 		return idPath;
 	}
-	public void setIdPath(int idPath) {
+	public void setIdPath(Integer idPath) {
 		this.idPath = idPath;
 	}
 	public String getStrFilename() {
@@ -32,10 +32,8 @@ public class Files {
 	public void setStrFilename(String strFilename) {
 		this.strFilename = strFilename;
 	}
-	public int getPlayCount() {
-		if (playCount != null)
-			return playCount;
-		return 0;
+	public Integer getPlayCount() {
+		return playCount;
 	}
 	public void setPlayCount(int playCount) {
 		this.playCount = playCount;

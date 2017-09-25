@@ -49,18 +49,14 @@ public class Path {
 	public void setStrHash(String strHash) {
 		this.strHash = strHash;
 	}
-	public int getScanRecursive() {
-		if (scanRecursive != null)
-			return scanRecursive;
-		return 0;
+	public Integer getScanRecursive() {
+		return scanRecursive;
 	}
 	public void setScanRecursive(int scanRecursive) {
 		this.scanRecursive = scanRecursive;
 	}
-	public int getUseFolderNames() {
-		if (useFolderNames != null)
-			return useFolderNames;
-		return 0;
+	public Integer getUseFolderNames() {
+		return useFolderNames;
 	}
 	public void setUseFolderNames(int useFolderNames) {
 		this.useFolderNames = useFolderNames;
@@ -71,18 +67,14 @@ public class Path {
 	public void setStrSettings(String strSettings) {
 		this.strSettings = strSettings;
 	}
-	public int getNoUpdate() {
-		if (noUpdate != null)
-			return noUpdate;
-		return 0;
+	public Integer getNoUpdate() {
+		return noUpdate;
 	}
 	public void setNoUpdate(int noUpdate) {
 		this.noUpdate = noUpdate;
 	}
-	public int getExclude() {
-		if (exclude != null)
-			return exclude;
-		return 0;
+	public Integer getExclude() {
+		return exclude;
 	}
 	public void setExclude(int exclude) {
 		this.exclude = exclude;
@@ -93,7 +85,4 @@ public class Path {
 	public void setDateAdded(String dateAdded) {
 		this.dateAdded = dateAdded;
 	}
-	
-	
-	
 }

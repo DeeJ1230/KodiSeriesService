@@ -6,4 +6,6 @@ import dk.leknoi.kodiservice.model.Path;
 
 public interface IPathService {
 	List<Path> findAll();
+	Path updatePath(Path path);
 }
+

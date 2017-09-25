@@ -19,4 +19,13 @@ public class PathService implements IPathService {
 		return pathRepository.findAll();
 	}
 
+	@Override
+	public Path updatePath(Path path) {
+		Path updatedPath = pathRepository.findOne(path.getIdPath());
+		updatedPath.setStrPath(path.getStrPath());
+		pathRepository.save(updatedPath);
+		return updatedPath;
+	}
+
+	
 }

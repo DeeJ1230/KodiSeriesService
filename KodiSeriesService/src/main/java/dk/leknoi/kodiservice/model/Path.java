@@ -85,4 +85,12 @@ public class Path {
 	public void setDateAdded(String dateAdded) {
 		this.dateAdded = dateAdded;
 	}
+	@Override
+	public String toString() {
+		return "Path [idPath=" + idPath + ", strPath=" + strPath + ", strContent=" + strContent + ", strScraper="
+				+ strScraper + ", strHash=" + strHash + ", scanRecursive=" + scanRecursive + ", useFolderNames="
+				+ useFolderNames + ", strSettings=" + strSettings + ", noUpdate=" + noUpdate + ", exclude=" + exclude
+				+ ", dateAdded=" + dateAdded + "]";
+	}
+	
 }

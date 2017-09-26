@@ -21,6 +21,7 @@ public class PathController {
 	IPathService pathService;
 		
 	@RequestMapping(value="", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
+	@ResponseStatus(HttpStatus.OK)
 	public List<Path> listPath() {
 		return pathService.findAll();
 	}

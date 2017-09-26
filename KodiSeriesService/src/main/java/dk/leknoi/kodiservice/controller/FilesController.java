@@ -32,4 +32,9 @@ public class FilesController {
 	public List<Files> findFiles(@PathVariable("idfile") int idFile) {
 		return filesService.findAllByIdFile(idFile);
 	}
+	
+	@RequestMapping(value="/{idfile}", method=RequestMethod.POST, produces=MediaType.APPLICATION_JSON_VALUE)
+	public Files updateFile(@PathVariable("idfile") int idFile) {
+		return null;
+	}
 }

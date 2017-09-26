@@ -38,4 +38,9 @@ public class EpisodeController {
 	public List<Episode> findByIdFile(@PathVariable("idFile") int idFile) {
 		return episodeService.findByIdFile(idFile);
 	}
+	
+	@RequestMapping(value="/[idepisode}", method=RequestMethod.POST, produces=MediaType.APPLICATION_JSON_VALUE)
+	public Episode updateEpisode(@PathVariable("idepisode") int idEpisode) {
+		return null;
+	}
 }

@@ -16,7 +16,7 @@ import dk.leknoi.kodiservice.service.ISerieService;
 
 @RestController
 @RequestMapping("/tvshow")
-public class SerieController {
+public class TvshowController {
 	@Autowired
 	ISerieService serieService;
 
@@ -28,5 +28,10 @@ public class SerieController {
 	@RequestMapping(value="/{idshow}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
 	public TvShow findSerie(@PathVariable("idshow") int idShow) {
 		return serieService.findSerieByIdshow(idShow);
+	}
+	
+	@RequestMapping(value="/titel/{titel}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
+	public List<TvShow> findSerieByTitel(@PathVariable("titel") String titel) {
+		return serieService.findSerieByTitel(titel);
 	}
 }

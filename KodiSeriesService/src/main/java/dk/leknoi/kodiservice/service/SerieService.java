@@ -24,4 +24,11 @@ public class SerieService implements ISerieService {
 		return serieRepository.findOne(idShow);
 	}
 
+	@Override
+	public List<TvShow> findSerieByTitel(String titel) {
+//		return serieRepository.findByTitelContaining(titel);
+		return serieRepository.findByC00Containing(titel);
+	}
+
+	
 }

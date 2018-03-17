@@ -13,10 +13,16 @@ public class PathService implements IPathService {
 
 	@Autowired
 	IPathRepository pathRepository;
-	
+
 	@Override
 	public List<Path> findAll() {
 		return pathRepository.findAll();
+	}
+
+	@Override
+	public Path findOne(int idPath) {
+		Path path = pathRepository.findOne(idPath);
+		return path;
 	}
 
 	@Override
@@ -27,5 +33,4 @@ public class PathService implements IPathService {
 		return updatedPath;
 	}
 
-	
 }

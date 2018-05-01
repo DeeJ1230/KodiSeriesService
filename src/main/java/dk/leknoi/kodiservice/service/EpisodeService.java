@@ -13,7 +13,7 @@ public class EpisodeService implements IEpisodeService {
 
 	@Autowired
 	IEpisodeRepository episodeRepository;
-	
+
 	@Override
 	public List<Episode> findByIdShow(int idShow) {
 		return episodeRepository.findByIdShow(idShow);
@@ -33,6 +33,4 @@ public class EpisodeService implements IEpisodeService {
 	public Episode findOne(int idEpisode) {
 		return episodeRepository.findOne(idEpisode);
 	}
-
-	
 }

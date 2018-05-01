@@ -13,7 +13,7 @@ public class FilesService implements IFilesService {
 
 	@Autowired
 	IFilesRepository filesRepository;
-	
+
 	@Override
 	public List<Files> findAll() {
 		return filesRepository.findAll();
@@ -23,5 +23,4 @@ public class FilesService implements IFilesService {
 	public List<Files> findAllByIdFile(int idFile) {
 		return filesRepository.findAllByIdFile(idFile);
 	}
-
 }

@@ -32,5 +32,4 @@ public class PathService implements IPathService {
 		pathRepository.save(updatedPath);
 		return updatedPath;
 	}
-
 }

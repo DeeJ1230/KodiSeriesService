@@ -26,9 +26,7 @@ public class SerieService implements ISerieService {
 
 	@Override
 	public List<TvShow> findSerieByTitel(String titel) {
-//		return serieRepository.findByTitelContaining(titel);
+		// return serieRepository.findByTitelContaining(titel);
 		return serieRepository.findByC00Containing(titel);
 	}
-
-	
 }

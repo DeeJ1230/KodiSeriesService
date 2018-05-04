@@ -33,5 +33,4 @@ public class EpisodeService implements IEpisodeService {
 	public Episode findOne(int idEpisode) {
 		return episodeRepository.findOne(idEpisode);
 	}
-
 }

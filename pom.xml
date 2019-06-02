@@ -7,8 +7,9 @@
 	<artifactId>kodi-series-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>demo-series-jpa</name>
+	<name>kodi-series-service</name>
 	<description>Kodi Series Service</description>
+	<packaging>war</packaging>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

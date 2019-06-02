@@ -34,6 +34,14 @@ server:
 #################################################################################
 logging:
   file: kodiservice.log
+  pattern:
+    file: %d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] [%t] %c{1} - %msg%n
+  level:
+    root: INFO
+#    org
+#      springframework
+#        web: INFO
+#    logging.level.com.example.devops=INFO
   
 #################################################################################
 # actuator

@@ -2,6 +2,8 @@ package dk.leknoi.kodiservice.controller;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,8 +19,10 @@ import dk.leknoi.kodiservice.service.ISerieService;
 @RestController
 @RequestMapping("/tvshow")
 public class TvshowController {
+	private final Logger logger = LoggerFactory.getLogger(this.getClass());
+
 	@Autowired
-	ISerieService serieService;
+	private ISerieService serieService;
 
 	@RequestMapping(value="", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
 	public List<TvShow> listSeries() {
@@ -32,6 +36,9 @@ public class TvshowController {
 	
 	@RequestMapping(value="/titel/{titel}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
 	public List<TvShow> findSerieByTitel(@PathVariable("titel") String titel) {
+
+		logger.info("Titelsearch: " + titel);
+
 		return serieService.findSerieByTitel(titel);
 	}
 }

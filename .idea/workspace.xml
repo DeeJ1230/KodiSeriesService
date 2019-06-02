@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4f05d92d-0316-4248-aced-1d9c3ce32c45" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/controller/TvshowController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="128">
@@ -47,11 +48,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+            <state relative-caret-position="196">
+              <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -69,8 +70,8 @@
         <option value="$PROJECT_DIR$/.jenkins/release/Jenkinsfile" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/controller/TvshowController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -225,11 +226,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559476999720</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implementing logger">
+      <created>1559477401414</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559477401414</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1440" height="873" extended-state="1" />
+    <frame x="0" y="27" width="1440" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4993565" visible="true" weight="0.24964131" />
@@ -322,17 +330,17 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties.bck">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/controller/TvshowController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
         </state>
       </provider>
     </entry>

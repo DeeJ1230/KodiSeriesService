@@ -33,7 +33,7 @@ server:
 #Logging
 #################################################################################
 logging:
-  file: kodiservice.log
+  file: logs/kodiservice.log
   pattern:
     file: %d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] [%t] %c{1} - %msg%n
   level:

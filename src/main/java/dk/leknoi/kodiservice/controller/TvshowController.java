@@ -26,11 +26,13 @@ public class TvshowController {
 
 	@RequestMapping(value="", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
 	public List<TvShow> listSeries() {
+
 		return serieService.findAll();
 	}
 	
 	@RequestMapping(value="/{idshow}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
 	public TvShow findSerie(@PathVariable("idshow") int idShow) {
+
 		return serieService.findSerieByIdshow(idShow);
 	}
 	

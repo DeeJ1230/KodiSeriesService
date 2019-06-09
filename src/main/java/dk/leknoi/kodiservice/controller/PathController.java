@@ -19,23 +19,26 @@ import dk.leknoi.kodiservice.service.IPathService;
 @RequestMapping("/path")
 public class PathController {
 	@Autowired
-	IPathService pathService;
+	private IPathService pathService;
 
 	@RequestMapping(value = "", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public List<Path> listPath() {
+
 		return pathService.findAll();
 	}
 
 	@RequestMapping(value = "/{idPath}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public Path getPath(@PathVariable("idPath") int idPath) {
+
 		return pathService.findOne(idPath);
 	}
 
 	@RequestMapping(value = "", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.CREATED)
 	public Path updatePath(@RequestBody Path path) {
+
 		return pathService.updatePath(path);
 	}
 }

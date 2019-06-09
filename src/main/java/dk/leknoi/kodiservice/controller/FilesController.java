@@ -21,20 +21,23 @@ import dk.leknoi.kodiservice.service.ISerieService;
 @RequestMapping("/files")
 public class FilesController {
 	@Autowired
-	IFilesService filesService;
+	private IFilesService filesService;
 		
 	@RequestMapping(value="", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
 	public List<Files> listFiles() {
+
 		return filesService.findAll();
 	}
 
 	@RequestMapping(value="/{idfile}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
 	public List<Files> findFiles(@PathVariable("idfile") int idFile) {
+
 		return filesService.findAllByIdFile(idFile);
 	}
 	
 	@RequestMapping(value="/{idfile}", method=RequestMethod.POST, produces=MediaType.APPLICATION_JSON_VALUE)
 	public Files updateFile(@PathVariable("idfile") int idFile) {
+
 		return null;
 	}
 }

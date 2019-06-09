@@ -23,6 +23,7 @@ public class TvshowController {
 
 	@Autowired
 	private ITvShowService serieService;
+	@Autowired
 	private ModelMapper modelMapper;
 
 	@RequestMapping(value="", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)

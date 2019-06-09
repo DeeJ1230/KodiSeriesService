@@ -9,13 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import dk.leknoi.kodiservice.model.Episode;
 import dk.leknoi.kodiservice.model.Files;
-import dk.leknoi.kodiservice.model.TvShow;
-import dk.leknoi.kodiservice.repository.IEpisodeRepository;
-import dk.leknoi.kodiservice.repository.IFilesRepository;
 import dk.leknoi.kodiservice.service.IFilesService;
-import dk.leknoi.kodiservice.service.ISerieService;
 
 @RestController
 @RequestMapping("/files")

@@ -2,6 +2,8 @@ package dk.leknoi.kodiservice.controller;
 
 import java.util.List;
 
+import dk.leknoi.kodiservice.controller.dto.TvShowDto;
+import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,10 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import dk.leknoi.kodiservice.model.Episode;
 import dk.leknoi.kodiservice.model.TvShow;
-import dk.leknoi.kodiservice.repository.IEpisodeRepository;
-import dk.leknoi.kodiservice.service.ISerieService;
+import dk.leknoi.kodiservice.service.ITvShowService;
 
 @RestController
 @RequestMapping("/tvshow")
@@ -22,7 +22,8 @@ public class TvshowController {
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
 	@Autowired
-	private ISerieService serieService;
+	private ITvShowService serieService;
+	private ModelMapper modelMapper;
 
 	@RequestMapping(value="", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
 	public List<TvShow> listSeries() {
@@ -31,9 +32,10 @@ public class TvshowController {
 	}
 	
 	@RequestMapping(value="/{idshow}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
-	public TvShow findSerie(@PathVariable("idshow") int idShow) {
+	public TvShowDto findSerie(@PathVariable("idshow") int idShow) {
 
-		return serieService.findSerieByIdshow(idShow);
+		TvShow tvShow = serieService.findSerieByIdshow(idShow);
+		return modelMapper.map(tvShow, TvShowDto.class);
 	}
 	
 	@RequestMapping(value="/titel/{titel}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
@@ -43,4 +45,24 @@ public class TvshowController {
 
 		return serieService.findSerieByTitel(titel);
 	}
+
+	private TvShowDto convertToDto(TvShow tvShow) {
+		TvShowDto tvShowDto = modelMapper.map(tvShow, TvShowDto.class);
+//		postDto.setSubmissionDate(post.getSubmissionDate(),
+//				userService.getCurrentUser().getPreference().getTimezone());
+		return tvShowDto;
+	}
+
+//	private Post convertToEntity(PostDto postDto) throws ParseException {
+//		Post post = modelMapper.map(postDto, Post.class);
+//		post.setSubmissionDate(postDto.getSubmissionDateConverted(
+//				userService.getCurrentUser().getPreference().getTimezone()));
+//
+//		if (postDto.getId() != null) {
+//			Post oldPost = postService.getPostById(postDto.getId());
+//			post.setRedditID(oldPost.getRedditID());
+//			post.setSent(oldPost.isSent());
+//		}
+//		return post;
+//	}
 }

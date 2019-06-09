@@ -4,7 +4,7 @@ import java.util.List;
 
 import dk.leknoi.kodiservice.model.TvShow;
 
-public interface ISerieService {
+public interface ITvShowService {
 	List<TvShow> findAll();
 	TvShow findSerieByIdshow(int idShow);
 	List<TvShow> findSerieByTitel(String titel);

@@ -9,10 +9,10 @@ import dk.leknoi.kodiservice.model.TvShow;
 import dk.leknoi.kodiservice.repository.ISerieRepository;
 
 @Service
-public class SerieService implements ISerieService {
+public class TvShowService implements ITvShowService {
 
 	@Autowired
-	ISerieRepository serieRepository;
+	private ISerieRepository serieRepository;
 
 	@Override
 	public List<TvShow> findAll() {

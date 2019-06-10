@@ -12,7 +12,7 @@ import dk.leknoi.kodiservice.repository.IPathRepository;
 public class PathService implements IPathService {
 
 	@Autowired
-	IPathRepository pathRepository;
+	private IPathRepository pathRepository;
 
 	@Override
 	public List<Path> findAll() {
@@ -21,15 +21,15 @@ public class PathService implements IPathService {
 
 	@Override
 	public Path findOne(int idPath) {
-		Path path = pathRepository.findOne(idPath);
-		return path;
+		return pathRepository.findOne(idPath);
 	}
 
 	@Override
 	public Path updatePath(Path path) {
-		Path updatedPath = pathRepository.findOne(path.getIdPath());
-		updatedPath.setStrPath(path.getStrPath());
-		pathRepository.save(updatedPath);
-		return updatedPath;
+//		Path updatedPath = pathRepository.findOne(path.getIdPath());
+//		updatedPath.setStrPath(path.getStrPath());
+//		pathRepository.save(updatedPath);
+//		return updatedPath;
+		return null;
 	}
 }

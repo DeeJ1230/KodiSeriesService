@@ -12,7 +12,11 @@ public class TvShowDto {
     private static final SimpleDateFormat dateFormat
             = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
-    private Integer idShow;
+    private int idShow;
+    public void setIdShow(int idShow) {
+        this.idShow = idShow;
+    }
+
     private String showTitle;
     private String plotSummary;
     private String status;

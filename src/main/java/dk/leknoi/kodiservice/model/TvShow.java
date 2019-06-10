@@ -26,18 +26,33 @@ public class TvShow {
 
 	private String c03;
 	private String c04;
-	private String c05;
-	private String c06;
+
+	@Column(name = "c05")
+	private String firstAired;
+	@Column(name = "c06")
+	private String thumbnailURL;
+
 	private String c07;
-	private String c08;
-	private String c09;
-	private String c10;
-	private String c11;
-	private String c12;
-	private String c13;
-	private String c14;
-	private String c15;
-	private String c16;
+
+	@Column(name = "c08")
+	private String genre;
+	@Column(name = "c09")
+	private String originalTitle;
+	@Column(name = "c10")
+	private String episodeGuideURL;
+	@Column(name = "c11")
+	private String fanArtURL;
+	@Column(name = "c12")
+	private String uniqueKodiID;
+	@Column(name = "c13")
+	private String contentRating;
+	@Column(name = "c14")
+	private String studio;
+	@Column(name = "c15")
+	private String titleFormattedForSorting;
+	@Column(name = "c16")
+	private String trailer;
+
 	private String c17;
 	private String c18;
 	private String c19;

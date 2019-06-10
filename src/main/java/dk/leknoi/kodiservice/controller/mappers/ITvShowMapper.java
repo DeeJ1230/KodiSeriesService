@@ -8,8 +8,8 @@ import org.mapstruct.Mappings;
 
 @Mapper(componentModel = "spring")
 public interface ITvShowMapper {
-    @Mappings({
-            @Mapping(target="idShow", source="idShow")
-    })
+//    @Mappings({
+//            @Mapping(target="idShow", source="idShow")
+//    })
     TvShowDto entityToDto(TvShow tvShow);
 }

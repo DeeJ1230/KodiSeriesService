@@ -15,9 +15,10 @@ public class TvShow {
 	//private String c00;
 	@Column(name = "c00")
 	private String showTitle;
+
 	private String c01;
 	private String c02;
-	private String status;
+	//private String status;
 
 	private String c03;
 	private String c04;

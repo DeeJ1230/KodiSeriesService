@@ -18,5 +18,5 @@ public interface ISerieRepository extends CrudRepository<TvShow, Integer> {
 //	@Query("Select c from tvshow c where c.c00 like %:titel%")
 //	List<TvShow> findByTitelContaining(@Param("titel") String titel);
 	
-	List<TvShow> findByC00Containing(String titel);
+	List<TvShow> findByShowTitleContaining(String titel);
 }

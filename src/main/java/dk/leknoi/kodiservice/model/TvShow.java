@@ -17,11 +17,10 @@ public class TvShow {
 		return idShow;
 	}
 
-    private String c00;
+    // private String c00;
 
-//	@Column(name = "c00")
-//	private String showTitle;
-
+	@Column(name = "c00")
+	private String showTitle;
 	@Column(name = "c01")
 	private String plotSummary;
 	@Column(name = "c02")

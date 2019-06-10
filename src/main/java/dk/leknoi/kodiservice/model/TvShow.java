@@ -2,6 +2,7 @@ package dk.leknoi.kodiservice.model;
 
 import lombok.Data;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -11,7 +12,9 @@ public class TvShow {
 
 	@Id
 	private int idShow;
-	private String c00;
+	//private String c00;
+	@Column(name = "c00")
+	private String showTitle;
 	private String c01;
 	private String c02;
 	private String c03;

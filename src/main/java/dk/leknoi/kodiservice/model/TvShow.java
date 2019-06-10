@@ -17,6 +17,8 @@ public class TvShow {
 	private String showTitle;
 	private String c01;
 	private String c02;
+	private String status;
+
 	private String c03;
 	private String c04;
 	private String c05;

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4f05d92d-0316-4248-aced-1d9c3ce32c45" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/model/TvShow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/model/TvShow.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,16 +64,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/model/TvShow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="116">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/controller/TvshowController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
@@ -134,7 +135,6 @@
         <option value="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/model/Files.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/model/Episode.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/model/Path.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/model/TvShow.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/controller/EpisodeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/controller/PathController.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/controller/FilesController.java" />
@@ -145,6 +145,7 @@
         <option value="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/controller/dto/TvShowDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/controller/mappers/ITvShowMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/controller/TvshowController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/model/TvShow.java" />
       </list>
     </option>
   </component>
@@ -463,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560153115014</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Implementing mapper">
+      <created>1560153469327</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1560153469327</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -489,7 +497,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Build" order="10" />
       <window_info anchor="bottom" id="ConsoleMavenPlugin" order="11" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.3292683" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3292683" />
       <window_info anchor="bottom" id="Docker" order="13" />
       <window_info anchor="bottom" id="Services" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -669,13 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/model/TvShow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/controller/mappers/ITvShowMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -697,6 +698,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/model/TvShow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
         </state>
       </provider>
     </entry>

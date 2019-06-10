@@ -9,8 +9,7 @@ import org.mapstruct.Mappings;
 @Mapper(componentModel = "spring")
 public interface ITvShowMapper {
     @Mappings({
-            @Mapping(target="idShow", source="idShow"),
-            @Mapping(target="showTitle", source="c00")
+            @Mapping(target="idShow", source="idShow")
     })
     TvShowDto entityToDto(TvShow tvShow);
 }

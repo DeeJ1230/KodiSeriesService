@@ -13,11 +13,9 @@ public class TvShow {
 
 	@Id
 	private int idShow;
-	public int getIdShow() {
-		return idShow;
-	}
-
-    // private String c00;
+//	public int getIdShow() {
+//		return idShow;
+//	}
 
 	@Column(name = "c00")
 	private String showTitle;
@@ -47,6 +45,5 @@ public class TvShow {
 	private String c21;
 	private String c22;
 	private String c23;
-
 
 }

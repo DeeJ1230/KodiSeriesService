@@ -13,9 +13,9 @@ public class TvShowDto {
             = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
     private int idShow;
-    public void setIdShow(int idShow) {
-        this.idShow = idShow;
-    }
+//    public void setIdShow(int idShow) {
+//        this.idShow = idShow;
+//    }
 
     private String showTitle;
     private String plotSummary;

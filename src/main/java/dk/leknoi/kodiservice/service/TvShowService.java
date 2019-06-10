@@ -26,7 +26,6 @@ public class TvShowService implements ITvShowService {
 
 	@Override
 	public List<TvShow> findSerieByTitel(String titel) {
-		// return serieRepository.findByTitelContaining(titel);
 		return serieRepository.findByShowTitleContaining(titel);
 	}
 }

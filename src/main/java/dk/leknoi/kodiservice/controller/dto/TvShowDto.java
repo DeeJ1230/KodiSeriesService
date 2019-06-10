@@ -16,6 +16,7 @@ public class TvShowDto {
     private String showTitle;
     private String plotSummary;
     private String status;
+    private String rating;
     private String firstAired;
     private String thumbnailURL;
     private String genre;

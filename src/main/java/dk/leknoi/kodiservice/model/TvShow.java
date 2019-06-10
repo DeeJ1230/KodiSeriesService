@@ -25,8 +25,8 @@ public class TvShow {
 	private String status;
 
 	private String c03;
-	private String c04;
-
+	@Column(name = "c04")
+	private String rating;
 	@Column(name = "c05")
 	private String firstAired;
 	@Column(name = "c06")

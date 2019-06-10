@@ -6,13 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import dk.leknoi.kodiservice.model.TvShow;
-import dk.leknoi.kodiservice.repository.ISerieRepository;
+import dk.leknoi.kodiservice.repository.ITvShowRepository;
 
 @Service
 public class TvShowService implements ITvShowService {
 
 	@Autowired
-	private ISerieRepository serieRepository;
+	private ITvShowRepository serieRepository;
 
 	@Override
 	public List<TvShow> findAll() {

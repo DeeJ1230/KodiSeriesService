@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 import dk.leknoi.kodiservice.model.TvShow;
 
 @Repository
-public interface ISerieRepository extends CrudRepository<TvShow, Integer> {
+public interface ITvShowRepository extends CrudRepository<TvShow, Integer> {
 	List<TvShow> findAll();
 	TvShow findSerieByIdShow(int idShow);
 	

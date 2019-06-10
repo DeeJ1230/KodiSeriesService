@@ -1,10 +1,8 @@
-package dk.leknoi.kodiservice.controller.mappers;
+package dk.leknoi.kodiservice.controller.dto.mappers;
 
 import dk.leknoi.kodiservice.controller.dto.TvShowDto;
 import dk.leknoi.kodiservice.model.TvShow;
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.Mappings;
 
 @Mapper(componentModel = "spring")
 public interface ITvShowMapper {

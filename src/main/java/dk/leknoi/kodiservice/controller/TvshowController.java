@@ -1,6 +1,7 @@
 package dk.leknoi.kodiservice.controller;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import dk.leknoi.kodiservice.controller.dto.TvShowDto;
 import dk.leknoi.kodiservice.controller.mappers.ITvShowMapper;
@@ -41,10 +42,11 @@ public class TvshowController {
 	}
 	
 	@RequestMapping(value="/titel/{titel}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
-	public List<TvShow> findSerieByTitel(@PathVariable("titel") String titel) {
+	public List<TvShowDto> findSerieByTitel(@PathVariable("titel") String titel) {
 
 		logger.info("Titelsearch: " + titel);
 
-		return serieService.findSerieByTitel(titel);
+		//return serieService.findSerieByTitel(titel);
+		return serieService.findSerieByTitel(titel).stream().map(s->modelMapper.entityToDto(s)).collect(Collectors.toList());
 	}
 }

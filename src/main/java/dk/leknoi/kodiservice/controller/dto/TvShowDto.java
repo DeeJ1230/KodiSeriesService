@@ -13,7 +13,7 @@ public class TvShowDto {
             = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
     private Integer idShow;
-    private String showtitle;
+    private String showTitle;
     private String plotSummary;
     private String status;
     private String firstAired;

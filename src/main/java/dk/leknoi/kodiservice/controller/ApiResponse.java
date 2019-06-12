@@ -7,6 +7,7 @@ import java.util.List;
 
 @Data
 public class ApiResponse<T> {
+
     private T result;
     private String message;
     private List<ErrorField> errors;

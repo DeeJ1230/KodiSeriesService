@@ -25,8 +25,7 @@ public class Application extends SpringBootServletInitializer {
 				.featuresToEnable(DeserializationFeature.ACCEPT_EMPTY_STRING_AS_NULL_OBJECT)
 				.featuresToEnable(MapperFeature.ACCEPT_CASE_INSENSITIVE_PROPERTIES)
 //				.featuresToDisable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS).modules(new JodaModule())
-				.serializationInclusion(JsonInclude.Include.NON_NULL).defaultUseWrapper(false);
-//				.setSerializationInclusion(JsonInclude.Include.NON_NULL);
-//		mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+				.serializationInclusion(JsonInclude.Include.NON_NULL)
+				.defaultUseWrapper(false);
 	}
 }

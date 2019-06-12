@@ -8,7 +8,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -23,7 +26,7 @@ public class TvshowController {
 	@Autowired
 	private ITvShowMapper modelMapper;
 
-	@RequestMapping(value="", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(value="", produces=MediaType.APPLICATION_JSON_VALUE)
 	public List<TvShow> listSeries() {
 
 		return serieService.findAll();
@@ -36,7 +39,7 @@ public class TvshowController {
 		return new ApiResponse<>(modelMapper.entityToDto(tvShow));
 	}
 	
-	@RequestMapping(value="/titel/{titel}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(value="/titel/{titel}", produces=MediaType.APPLICATION_JSON_VALUE)
 	public ApiResponse<List<TvShowDto>> findSerieByTitel(@PathVariable("titel") String titel) {
 
 		logger.info("Titelsearch: " + titel);

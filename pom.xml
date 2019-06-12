@@ -108,22 +108,22 @@
 			<artifactId>spring-hateoas</artifactId>
 			<version>0.25.1.RELEASE</version>
 		</dependency>
-<!--		<dependency>-->
-<!--			<groupId>com.fasterxml.jackson.core</groupId>-->
-<!--			<artifactId>jackson-databind</artifactId>-->
-<!--			<version>2.9.9</version>-->
-<!--			<exclusions>-->
-<!--				<exclusion>-->
-<!--					<groupId>com.fasterxml.jackson.core</groupId>-->
-<!--					<artifactId>jackson-annotations</artifactId>-->
-<!--				</exclusion>-->
-<!--			</exclusions>-->
-<!--		</dependency>-->
-<!--		<dependency>-->
-<!--			<groupId>com.fasterxml.jackson.core</groupId>-->
-<!--			<artifactId>jackson-annotations</artifactId>-->
-<!--			<version>2.9.9</version>-->
-<!--		</dependency>-->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.9.9</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.fasterxml.jackson.core</groupId>
+					<artifactId>jackson-annotations</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.9.9</version>
+		</dependency>
 <!--		<dependency>-->
 <!--			<groupId>com.google.code.gson</groupId>-->
 <!--			<artifactId>gson</artifactId>-->

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f05d92d-0316-4248-aced-1d9c3ce32c45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/controller/TvshowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/controller/TvshowController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -392,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560362644567</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Added bootstrap file">
+      <created>1561354279753</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1561354279753</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -418,7 +424,8 @@
     <MESSAGE value="Upgraded to Spring Boot v2" />
     <MESSAGE value="Implementing mapper" />
     <MESSAGE value="Jackson JSON formatter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jackson JSON formatter" />
+    <MESSAGE value="Added bootstrap file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added bootstrap file" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="masterDetails">

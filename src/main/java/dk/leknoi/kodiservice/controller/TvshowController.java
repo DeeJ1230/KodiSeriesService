@@ -43,7 +43,9 @@ public class TvshowController {
 	public ApiResponse<List<TvShowDto>> findSerieByTitel(@PathVariable("titel") String titel) {
 
 		logger.info("Titelsearch: " + titel);
+		ApiResponse<List<TvShowDto>> result = new ApiResponse<>(serieService.findSerieByTitel(titel).stream().map(s->modelMapper.entityToDto(s)).collect(Collectors.toList()));
+		logger.info("Rows in result: " + result.getResult().size());
 
-		return new ApiResponse<>(serieService.findSerieByTitel(titel).stream().map(s->modelMapper.entityToDto(s)).collect(Collectors.toList()));
+		return result;
 	}
 }

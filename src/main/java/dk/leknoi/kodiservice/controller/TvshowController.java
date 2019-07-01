@@ -44,6 +44,7 @@ public class TvshowController {
 
 		logger.info("Titelsearch: " + titel);
 		ApiResponse<List<TvShowDto>> result = new ApiResponse<>(serieService.findSerieByTitel(titel).stream().map(s->modelMapper.entityToDto(s)).collect(Collectors.toList()));
+
 		logger.info("Rows in result: " + result.getResult().size());
 
 		return result;

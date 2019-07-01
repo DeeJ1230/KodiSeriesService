@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f05d92d-0316-4248-aced-1d9c3ce32c45" name="Default Changelist" comment="" />
+    <list default="true" id="4f05d92d-0316-4248-aced-1d9c3ce32c45" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/controller/TvshowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/controller/TvshowController.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -409,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562008679320</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="log count in result">
+      <created>1562009300400</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1562009300400</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

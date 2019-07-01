@@ -42,10 +42,8 @@ public class TvshowController {
 	@GetMapping(value="/titel/{titel}", produces=MediaType.APPLICATION_JSON_VALUE)
 	public ApiResponse<List<TvShowDto>> findSerieByTitel(@PathVariable("titel") String titel) {
 
-		logger.info("Titelsearch: " + titel);
 		ApiResponse<List<TvShowDto>> result = new ApiResponse<>(serieService.findSerieByTitel(titel).stream().map(s->modelMapper.entityToDto(s)).collect(Collectors.toList()));
-
-		logger.info("Rows in result: " + result.getResult().size());
+		logger.info("Titelsearch: " + titel + "resulted in " + result.getResult().size() + "rows");
 
 		return result;
 	}

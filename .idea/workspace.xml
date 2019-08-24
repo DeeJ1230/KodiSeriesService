@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f05d92d-0316-4248-aced-1d9c3ce32c45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bootstrap.yml.bck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/controller/EpisodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/controller/EpisodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/controller/PathController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/service/EpisodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/service/EpisodeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/service/IEpisodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/service/IEpisodeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/service/IPathService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/service/PathService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/service/TvShowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/leknoi/kodiservice/service/TvShowService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +64,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -156,7 +142,7 @@
       <workItem from="1566635532914" duration="794000" />
       <workItem from="1566650331215" duration="221000" />
       <workItem from="1566650641010" duration="1673000" />
-      <workItem from="1566662755160" duration="794000" />
+      <workItem from="1566662755160" duration="1794000" />
     </task>
     <task id="LOCAL-00001" summary="Updated">
       <created>1559474205366</created>
@@ -487,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566624612042</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Prometheus support">
+      <created>1566663667074</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1566663667074</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

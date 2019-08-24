@@ -1,12 +1,11 @@
 package dk.leknoi.kodiservice.service;
 
-import java.util.List;
-
+import dk.leknoi.kodiservice.model.Episode;
+import dk.leknoi.kodiservice.repository.IEpisodeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import dk.leknoi.kodiservice.model.Episode;
-import dk.leknoi.kodiservice.repository.IEpisodeRepository;
+import java.util.List;
 
 @Service
 public class EpisodeService implements IEpisodeService {
@@ -29,9 +28,9 @@ public class EpisodeService implements IEpisodeService {
 		return episodeRepository.findAll();
 	}
 
-	@Override
-	public Episode findOne(int idEpisode) {
-		return episodeRepository.findOne(idEpisode);
-	}
+//	@Override
+//	public Episode findOne(int idEpisode) {
+//		return episodeRepository.findOne(idEpisode);
+//	}
 
 }

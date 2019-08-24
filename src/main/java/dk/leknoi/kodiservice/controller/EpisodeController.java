@@ -1,17 +1,15 @@
 package dk.leknoi.kodiservice.controller;
 
-import java.util.List;
-
+import dk.leknoi.kodiservice.model.Episode;
+import dk.leknoi.kodiservice.service.IEpisodeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import dk.leknoi.kodiservice.model.Episode;
-import dk.leknoi.kodiservice.model.TvShow;
-import dk.leknoi.kodiservice.service.IEpisodeService;
+import java.util.List;
 
 @RestController
 @RequestMapping("/episode")
@@ -25,11 +23,11 @@ public class EpisodeController {
 		return episodeService.findAll();
 	}
 	
-	@RequestMapping(value="/{idepisode}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
-	public Episode findEpisode(@PathVariable("idepisode") int idEpisode) {
-
-		return episodeService.findOne(idEpisode);
-	}
+//	@RequestMapping(value="/{idepisode}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
+//	public Episode findEpisode(@PathVariable("idepisode") int idEpisode) {
+//
+//		return episodeService.findOne(idEpisode);
+//	}
 	
 	@RequestMapping(value="/tvshow/{idShow}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
 	public List<Episode> findByIdShow(@PathVariable("idShow") int idShow) {

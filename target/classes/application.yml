@@ -17,7 +17,7 @@ spring:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
   datasource:
-    url: jdbc:mysql://192.168.0.174:3306/${my.db.schema}
+    url: jdbc:mysql://192.168.0.174:3306/${my.db.schema}?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: xbmc
     password: xbmc
     driver-class-name: com.mysql.jdbc.Driver
@@ -37,7 +37,7 @@ logging:
 #  pattern:
 #    file: %d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] [%t] %c{1} - %msg%n
   level:
-    root: DEBUG
+    root: INFO
     dk:
       leknoi:
         kodiservice: DEBUG

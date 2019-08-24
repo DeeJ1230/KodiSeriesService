@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f05d92d-0316-4248-aced-1d9c3ce32c45" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -141,14 +141,7 @@
       <workItem from="1566635532914" duration="794000" />
       <workItem from="1566650331215" duration="221000" />
       <workItem from="1566650641010" duration="1673000" />
-      <workItem from="1566662755160" duration="2068000" />
-    </task>
-    <task id="LOCAL-00001" summary="Updated">
-      <created>1559474205366</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1559474205366</updated>
+      <workItem from="1566662755160" duration="2558000" />
     </task>
     <task id="LOCAL-00002" summary="Updated">
       <created>1559476472658</created>
@@ -486,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566664760038</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Support tomcat">
+      <created>1566665196862</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1566665196886</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -520,7 +520,8 @@
     <MESSAGE value="Logging level" />
     <MESSAGE value="Prometheus support" />
     <MESSAGE value="Removed Mongo support" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed Mongo support" />
+    <MESSAGE value="Support tomcat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Support tomcat" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

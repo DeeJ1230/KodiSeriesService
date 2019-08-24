@@ -8,7 +8,11 @@ my:
 #################################################################################
 # Spring
 #################################################################################
+
+
 spring:
+  jmx:
+    enabled: false
   jpa:
     show-sql: true
     database-platform: org.hibernate.dialect.MySQLDialect

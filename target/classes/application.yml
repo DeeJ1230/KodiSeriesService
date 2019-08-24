@@ -36,16 +36,20 @@ logging:
   file: logs/kodiservice.log
 #  pattern:
 #    file: %d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] [%t] %c{1} - %msg%n
-#  level:
-#    root: INFO
-#    org
-#      springframework
-#        web: INFO
+  level:
+    root: DEBUG
+    dk:
+      leknoi:
+        kodiservice: DEBUG
 #    logging.level.com.example.devops=INFO
   
 #################################################################################
 # actuator
 #################################################################################
+management.endpoint.metrics.enabled: true
+management.endpoints.web.exposure.include: '*'
+management.endpoint.prometheus.enabled: true
+management.metrics.export.prometheus.enabled: true
 management:
   security:
     enabled: false
